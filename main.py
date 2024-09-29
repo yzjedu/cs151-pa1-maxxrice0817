@@ -1,18 +1,19 @@
 # Max Rice PA01
-miles_traveled = float(input("How many miles traveled?: "))
+name = input("Enter your name: ")
+miles_traveled = float(input(f" How many miles will you traveled?: "))
 if miles_traveled <= 5.5:
     location = ('Rockville')
-    print('You have arrived in Rockville')
+    print(f'{name} has arrived in Rockville')
 if miles_traveled >5.5 and miles_traveled < 100:
     location = ('Forest')
-    print('You have arrived in the Forest')
+    print(f'{name} has arrived in the Forest')
 elif miles_traveled >= 100:
     location = ('end of the world')
     print('GAME OVER: That is a little long for a walk, why dont you go somewhere closer')
 
 #Rockville story line
 if location=='Rockville':
-    artifact = (input("Steve: Hello I am the local trader Steve, would you like to you an artifact, yes or no?: "))
+    artifact = (input(f"Steve: Hello {name} I am the local trader Steve, would you like to you an artifact, yes or no?: "))
     if artifact=='yes':
         amount_money = int(input('Steve: How much money do you have? '))
         if amount_money < 50:
@@ -27,7 +28,7 @@ if location=='Rockville':
 
 #Forest Story line
 if location=='Forest':
-    Posters_bought = int(input('Jeff: Hello my name is Jeff, I am a local, I need help buying flyers for my missing cat, if you’d be so kind I really need some help buying flyers, how many flyers could you buy for me?: '))
+    Posters_bought = int(input(f'Jeff: Hello {name} my name is Jeff, I am a local, I need help buying flyers for my missing cat, if you’d be so kind I really need some help buying flyers, how many flyers could you buy for me?: '))
     if Posters_bought <= 0:
         print('Jeff: Oh I really thought you’d help me… Well I guess we both better get home, wish my cat could do the same')
         print('GAME OVER: you went home unlike Jeffs cat... you should of help')
@@ -40,6 +41,6 @@ if location=='Forest':
             print('Jeff: Great choice! You’ll be rich! Time to start the walk home with full pockets.')
             print('GAME OVER: you went home rich and Jeff found his cat')
         elif treasure=='a free ride home':
-            print('Jeff: No place like home! Wise choice, hopefully we meet again soon')
+            print(f'Jeff: No place like home! Wise choice, hopefully we meet again soon {name}')
             print('GAME OVER: you got home safe and Jeff found his cat with your help')
 
