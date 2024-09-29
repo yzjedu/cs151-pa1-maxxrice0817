@@ -1,4 +1,4 @@
-# Code goes here
+# Max Rice PA01
 miles_traveled = float(input("How many miles traveled?: "))
 if miles_traveled <= 5.5:
     location = ('Rockville')
@@ -9,7 +9,6 @@ if miles_traveled >5.5 and miles_traveled < 100:
 elif miles_traveled >= 100:
     location = ('end of the world')
     print('That is a little long for a walk, why dont you go somewhere closer')
-
 
 #Rockville story line
 if location=='Rockville':
@@ -25,8 +24,6 @@ if location=='Rockville':
     if artifact=='no':
         print('If you’re not buying you better just head home!')
         print('GAME OVER: you went home empty handed')
-
-
 
 #Forest Story line
 if location=='Forest':
