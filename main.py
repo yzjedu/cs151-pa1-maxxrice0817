@@ -5,14 +5,14 @@ if miles_traveled <= 5.5:
     print('You have arrived in Rockville')
 if miles_traveled >5.5 and miles_traveled < 100:
     location = ('Forest')
-    print('You have arrived in Forest')
+    print('You have arrived in the Forest')
 elif miles_traveled >= 100:
     location = ('end of the world')
-    print('That is a little long for a walk, why dont you go somewhere closer')
+    print('GAME OVER: That is a little long for a walk, why dont you go somewhere closer')
 
 #Rockville story line
 if location=='Rockville':
-    artifact = (input("Steve: Hello I am the local trader Steve, would you like to you a artifact?: "))
+    artifact = (input("Steve: Hello I am the local trader Steve, would you like to you an artifact, yes or no?: "))
     if artifact=='yes':
         amount_money = int(input('Steve: How much money do you have? '))
         if amount_money < 50:
@@ -35,7 +35,7 @@ if location=='Forest':
         print('Jeff: thanks for the help but sadly I don’t think that going to be enough, guess we both better head home.')
         print('GAME OVER: You went home unlike Jeffs cat... you could have printed more poster you know')
     if Posters_bought >= 25:
-        treasure = input('Jeff: thank you so much for your help this will definetly help find my cat! As a reward you can have either gold, rubies, or a free ride home?: ')
+        treasure = input('Jeff: thank you so much for your help this will definitely help find my cat! As a reward you can have either gold, rubies, or a free ride home?: ')
         if treasure=='gold' or treasure=='rubies':
             print('Jeff: Great choice! You’ll be rich! Time to start the walk home with full pockets.')
             print('GAME OVER: you went home rich and Jeff found his cat')
