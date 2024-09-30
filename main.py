@@ -1,6 +1,6 @@
 # Max Rice PA01
 name = input("Enter your name: ")
-miles_traveled = float(input(f" How many miles will you traveled?: "))
+miles_traveled = float(input(f" How many miles will you travel?: "))
 if miles_traveled <= 5.5:
     location = ('Rockville')
     print(f'{name} has arrived in Rockville')
@@ -15,7 +15,7 @@ elif miles_traveled >= 100:
 if location=='Rockville':
     artifact = (input(f"Steve: Hello {name} I am the local trader Steve, would you like to you an artifact, yes or no?: "))
     if artifact=='yes':
-        amount_money = int(input('Steve: How much money do you have? '))
+        amount_money = int(input('Steve: How many dollars do you have? '))
         if amount_money < 50:
             print('Steve: Are you joking! go home and do not return until you have some real money')
             print('GAME OVER: you went home empty handed')
