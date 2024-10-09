@@ -1,4 +1,7 @@
 # Max Rice PA01
+
+
+print('Welcome to the Adventure Game! Get ready to start your quest!')
 name = input("Enter your name: ")
 miles_traveled = float(input(f" How many miles will you travel?: "))
 if miles_traveled <= 5.5:
@@ -14,6 +17,8 @@ elif miles_traveled >= 100:
 #Rockville story line
 if location=='Rockville':
     artifact = (input(f"Steve: Hello {name} I am the local trader Steve, would you like to you an artifact, yes or no?: "))
+    artifact = artifact.lower()
+
     if artifact=='yes':
         amount_money = int(input('Steve: How many dollars do you have? '))
         if amount_money < 50:
@@ -37,6 +42,7 @@ if location=='Forest':
         print('GAME OVER: You went home unlike Jeffs cat... you could have printed more poster you know')
     if Posters_bought >= 25:
         treasure = input('Jeff: thank you so much for your help this will definitely help find my cat! As a reward you can have either gold, rubies, or a free ride home?: ')
+        treasure = treasure.lower()
         if treasure=='gold' or treasure=='rubies':
             print('Jeff: Great choice! You’ll be rich! Time to start the walk home with full pockets.')
             print('GAME OVER: you went home rich and Jeff found his cat')
