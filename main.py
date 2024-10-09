@@ -1,6 +1,6 @@
 # Max Rice PA01
-
-
+#due 10/9/2024
+#the goal of this program is to be an adventure game with different paths you can take
 print('Welcome to the Adventure Game! Get ready to start your quest!')
 name = input("Enter your name: ")
 miles_traveled = float(input(f" How many miles will you travel?: "))
@@ -39,7 +39,7 @@ if location=='Forest':
         print('GAME OVER: you went home unlike Jeffs cat... you should of help')
     if (Posters_bought > 0) and (Posters_bought < 25):
         print('Jeff: thanks for the help but sadly I don’t think that going to be enough, guess we both better head home.')
-        print('GAME OVER: You went home unlike Jeffs cat... you could have printed more poster you know')
+        print('GAME OVER: You went home unlike Jeffs cat... you could have printed more flyers you know')
     if Posters_bought >= 25:
         treasure = input('Jeff: thank you so much for your help this will definitely help find my cat! As a reward you can have either gold, rubies, or a free ride home?: ')
         treasure = treasure.lower()
